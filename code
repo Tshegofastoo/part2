@@ -1,0 +1,27 @@
+ private string[] steps;
+
+    public Recipe()
+    {
+        ingredients = new List<Ingredient>();
+    }
+
+    public void EnterRecipe()
+    {
+        Console.WriteLine("Enter the number of ingredients:");
+        int numIngredients = int.Parse(Console.ReadLine());
+
+        for (int i = 0; i < numIngredients; i++)
+        {
+            Console.WriteLine($"Enter the name of ingredient {i + 1}:");
+            string name = Console.ReadLine();
+
+            Console.WriteLine($"Enter the quantity of ingredient {i + 1}:");
+            string quantity = Console.ReadLine();
+
+            Console.WriteLine($"Enter the unit of measurement for ingredient {i + 1}:");
+            string unit = Console.ReadLine();
+
+            Console.WriteLine($"Enter the number of calories for ingredient {i + 1}:");
+            int calories = int.Parse(Console.ReadLine());
+            Console.WriteLine($"Enter the food group for ingredient {i + 1}:");
+            string foodGroup = Console.ReadLine();
